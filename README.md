@@ -1,23 +1,23 @@
 # WIP (Jan 25, 2018)
-# macOS for Asus Zenbook UX330UA 
-This project is to give the UX330UA an almost complete and functional build of macOS <S>10.13 High Sierra</S> 10.12 Sierra
+# macOS for Acer Swift 3 SF314-52 
+This project is to give the SF314-52 an almost complete and functional build of macOS 10.13 High Sierra
 
 ## My Specs 
-Model: UX330UAK
+Model: SF314-52
 
-Bios: 305
+Bios: 1.07
 
-CPU: Intel i5-7200U
+CPU: Intel i5-8250U
 
-GPU: Intel HD620
+GPU: Intel UHD 620
 
-RAM: 8GB DDR3 
+RAM: 8GB DDR4 
 
 Display: FHD, 1920x1080
 
-Storage: SATA 3 Micron 256GB 
+Storage: PCI-E NVME Intel 600p 256GB 
 
-Wifi: Intel Dual Band Wireless-AC 8260
+WiFi: Intel Dual Band Wireless-AC 7265
 
 ## Note
 Your laptop may or may not have the exact specs as mine. Results may vary. If you need help, please ask.
@@ -28,24 +28,25 @@ If you use a USB wifi adapter look for drivers from that model
 - Keyboard
 - Battery
 - USB Ports
-- Trackpad 
-
-# What doesn't work
+- Trackpad
 - Backlight
 - Brightness
-- Wifi (With 8260)
 - Sleep / Wake
+- Webcam
+- Bluetooth
+
+# What doesn't work
+
+- Card Reader
+- WiFi (Intel 7265)
 
 # Pre-Installation
 1. Replace original wifi chipset with a DW1560 (Recommended) or use a USB wifi adapter (Not recommended)
 2. You will have to wipe the entire disk 
 3. Change your BIOS settings: 
-  - **Disable** VT-d
-  - **Enable** Legacy USB Support
+  - **Enable** Set Supervisor Password (1234)
   - **Disable** Secure Boot
-  - **Enable** Launch CSM 
-  - Set DVMT to **64M**
-  - Change boot priority to USB
+  - **Enable** F12 Boot Menu 
   
 # Installation
 1. Create a macOS installation disk with a 16GB or more USB
@@ -78,4 +79,4 @@ If you use a USB wifi adapter look for drivers from that model
 12. Now you have a almost completely working hackintosh!
 
 ## Credits
-Ryan Wong
+Ryan Wong, Gregory Ocol
