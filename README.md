@@ -37,6 +37,7 @@ If you use a USB wifi adapter look for drivers from that model
 
 # What doesn't work
 
+- Keyboard Brightness Keys
 - Card Reader
 - WiFi (Intel 7265)
 
