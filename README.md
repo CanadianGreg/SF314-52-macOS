@@ -1,4 +1,4 @@
-# WIP (Jan 25, 2018)
+# WIP (November 1, 2018)
 # macOS for Acer Swift 3 SF314-52 
 This project is to give the SF314-52 an almost complete and functional build of macOS 10.13 High Sierra
 
@@ -15,9 +15,9 @@ RAM: 8GB DDR4
 
 Display: FHD, 1920x1080
 
-Storage: PCI-E NVME Intel 600p 256GB 
+Storage: PCI-E NVME ADATA SX8200 240GB 
 
-WiFi: Intel Dual Band Wireless-AC 7265
+WiFi: Broadcom DW1560
 
 ## Note
 Your laptop may or may not have the exact specs as mine. Results may vary. If you need help, please ask.
@@ -25,7 +25,7 @@ If you use a USB wifi adapter look for drivers from that model
 
 # What Works
 - Audio
-- Keyboard
+- Keyboard / Backlight
 - Battery
 - USB Ports
 - Trackpad
@@ -34,12 +34,13 @@ If you use a USB wifi adapter look for drivers from that model
 - Sleep / Wake
 - Webcam
 - Bluetooth
+- WiFi
 
 # What doesn't work
 
 - Keyboard Brightness Keys
 - Card Reader
-- WiFi (Intel 7265)
+- Touch ID
 
 # Pre-Installation
 1. Replace original wifi chipset with a DW1560 (Recommended) or use a USB wifi adapter (Not recommended)
@@ -80,4 +81,4 @@ If you use a USB wifi adapter look for drivers from that model
 12. Now you have a almost completely working hackintosh!
 
 ## Credits
-Ryan Wong, Gregory Ocol
+Ryan Wong, Gregory Ocol, PavelIT
