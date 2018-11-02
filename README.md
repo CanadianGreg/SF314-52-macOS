@@ -1,11 +1,9 @@
 # WIP (November 1, 2018)
 # macOS for Acer Swift 3 SF314-52 
-This project is to give the SF314-52 an almost complete and functional build of macOS 10.13 High Sierra
+This project is to give the SF314-52 an almost complete and functional build of macOS 10.14.1 Mojave
 
-## My Specs 
-Model: SF314-52
-
-Bios: 1.07
+## My Specs
+BIOS: 1.07
 
 CPU: Intel i5-8250U
 
@@ -20,65 +18,46 @@ Storage: PCI-E NVME ADATA SX8200 240GB
 WiFi: Broadcom DW1560
 
 ## Note
-Your laptop may or may not have the exact specs as mine. Results may vary. If you need help, please ask.
-If you use a USB wifi adapter look for drivers from that model
+Guide may be applicable to other Swift 3 models. Results may vary. If you need help, please ask.
+If you use a USB wifi adapter don't expect sleep to work properly.
+The original Intel 600p creates issues after sleep, converting drive to HFS+ after installation might fix the issue. Replacement drive is preferred.
 
 # What Works
 - Audio
-- Keyboard / Backlight
+- Keyboard / KB Backlight
 - Battery
 - USB Ports
-- Trackpad
-- Backlight
-- Brightness
+- Trackpad with advanced features
+- Brightness Control
 - Sleep / Wake
 - Webcam
 - Bluetooth
 - WiFi
+- Keyboard Function Keys
+- Keyboard Brightness Keys, needs Karabiner Elements
 
 # What doesn't work
-
-- Keyboard Brightness Keys
 - Card Reader
 - Touch ID
 
 # Pre-Installation
-1. Replace original wifi chipset with a DW1560 (Recommended) or use a USB wifi adapter (Not recommended)
-2. You will have to wipe the entire disk 
-3. Change your BIOS settings: 
+1. Replace Intel SSD with anything that isn't Intel and replace the WiFi adapter with a DW1560 (recomended) or use USB WiFi
+2. Change your BIOS Settings: 
   - **Enable** Set Supervisor Password (1234)
   - **Disable** Secure Boot
   - **Enable** F12 Boot Menu 
   
 # Installation
-1. Create a macOS installation disk with a 16GB or more USB
-2. Install clover with UEFI only and drivers64UEFI - choose OsxAptioFix2Drv-64
-3. Replace the original config.plist to the one I have provided
-4. Place the kexts in CLOVER/kexts/other and the HFSPlus.efi in /CLOVER/drivers64UEFI
-5. Boot into USB
-6. Install macOS
+1. Create a macOS installation disk with a 16GB USB drive using RehabMan's guide
+2. Restart laptop, hit F12 key and select the drive previously created
+3. Wipe target disk and install
 
 # Post-Installation
-1. Partition your disk to 2GB to install Clover 
-2. Install Clover with these options: 
-  - Install for UEFI booting only
-  - Install Clover in the ESP
-  - Themes - You can pick anything Theme you want.
-  - Drivers64UEFI / EmuVariableUefi-64, FSInject-64, HFSPlus, and OsxAptioFix2Drv-64
-  - Install all RC scripts on all other bootable OS X volume
-  - Optional RC Scripts / disable sleep proxy client
-  - (Optional) Pref panel
-3. Replace the original config.plist with mine
-4. Use KextWizard to install sata-100-unsupported, facksmc, and voodoops2
-**Now** you should be able to boot without the USB
-5. Reboot your computer and press F4 before proceeding into macOS
-6. Now you will need to patch your DSDT and SSDT's. Follow this guide [here](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/) Use MACiASL 6.1 to patch the DSDT and SSDT. 
-7. Use the provided DSDT patches and SSDT patches. For Graphics_PNLF.txt in SSDT, **only** place in one of the SSDT 
-8. Now place the newly patched DSDT and SSDT's into the CLOVER/ACPI/patched
-9. Reboot and make sure everything works
-10. Now use KextWizard to place the rest of the kexts that I provided into S/L/E 
-11. Reboot once again to see if all are working. 
-12. Now you have a almost completely working hackintosh!
+1. Install Clover
+2. Drag all contents inside CLOVER folder to CLOVER folder on EFI partition
+3. Restart
+4. Use KextBeast to install CodecCommander.kext to /Library/Extensions
+5. Patch your own DSDT and SSDT files or try using mine
 
 ## Credits
-Ryan Wong, Gregory Ocol, PavelIT
+PavelIT, Gregory Ocol (noob924)
