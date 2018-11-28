@@ -1,4 +1,4 @@
-# WIP (November 1, 2018)
+# WIP (November 28, 2018)
 # macOS for Acer Swift 3 SF314-52 
 This project is to give the SF314-52 an almost complete and functional build of macOS 10.14.1 Mojave
 

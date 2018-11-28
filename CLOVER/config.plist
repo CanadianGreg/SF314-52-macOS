@@ -266,9 +266,9 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>igfxrst=1 abm_firstpolldelay=10000 dart=0</string>
+		<string>igfxrst=1 dart=0</string>
 		<key>DefaultVolume</key>
-		<string>LastBootedVolume</string>
+		<string>F65D35FB-56D8-445A-A2C8-7182F01ADCD1</string>
 		<key>HibernationFixup</key>
 		<true/>
 		<key>Legacy</key>
