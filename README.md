@@ -45,7 +45,7 @@ If patching SSDT and DSDT, do the regular patches recommended by RehabMan and th
 # Bugs
 - laptop randomly locks-up and restarts sometimes (usually under high load while using bluetooth)
 - double tap to drag in accessibility doesn't work but triple finger drag works
-- fans turn on too early
+- audio distortion after sleep using AirPods
 
 # Pre-Installation
 1. Replace Intel SSD with anything that isn't Intel (unless converting to HFS+) and replace the WiFi adapter with a DW1560 (recommended) or use USB WiFi
