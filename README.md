@@ -1,4 +1,4 @@
-# WIP (February 5, 2019)
+# WIP (February 17, 2019)
 # macOS for Acer Swift 3 SF314-52 
 This project is to give the SF314-52 an almost complete and functional build of macOS 10.14.1 Mojave. I use it as my daily driver and there are no major issues. Battery life is similar to Windows. My repo is based off of PavelIT's clover zip file for the 15" version of the Swift 3, I just changed a few things as some items were buggy.
 
@@ -35,8 +35,7 @@ If patching SSDT and DSDT, do the regular patches recommended by RehabMan and th
 - Webcam
 - Bluetooth
 - WiFi
-- Keyboard Function Keys
-- Keyboard Brightness Keys, needs Karabiner Elements
+- All Keyboard Function Keys
 
 # What doesn't work
 - Card Reader
@@ -45,7 +44,6 @@ If patching SSDT and DSDT, do the regular patches recommended by RehabMan and th
 # Bugs
 - laptop randomly locks-up and restarts sometimes (usually under high load while using bluetooth)
 - double tap to drag in accessibility doesn't work but triple finger drag works
-- long azz boot times due to APFS, convert to HFS+ if it bothers you
 
 # Pre-Installation
 1. Replace Intel SSD with anything that isn't Intel (unless converting to HFS+) and replace the WiFi adapter with a DW1560 (recommended) or use USB WiFi
