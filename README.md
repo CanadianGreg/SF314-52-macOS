@@ -1,6 +1,6 @@
 # WIP (February 17, 2019)
 # macOS for Acer Swift 3 SF314-52 
-This project is to give the SF314-52 an almost complete and functional build of macOS 10.14.1 Mojave. I use it as my daily driver and there are no major issues. Battery life is similar to Windows. My repo is based off of PavelIT's clover zip file for the 15" version of the Swift 3, I just changed a few things as some items were buggy.
+This project is to give the SF314-52 an almost complete and functional build of macOS 10.14.1 Mojave. I use it as my daily driver and there are no major issues. Battery life is the same if not better compared to Windows. My repo is based off of PavelIT's clover zip file for the 15" version of the Swift 3, I just changed a few things as some items were buggy.
 
 ## My Specs
 BIOS: 1.07
@@ -13,7 +13,7 @@ RAM: 8GB 2400 MHz DDR4
 
 Display: FHD, 1920x1080
 
-Storage: PCI-E NVME ADATA SX8200NP 240GB + SATA Micron_1100_MTFDDAV256TBN
+Storage: PCI-E NVME ADATA SX8200NP 240GB
 
 WiFi/BT: Broadcom DW1560
 
@@ -22,7 +22,7 @@ Guide may be applicable to other Swift 3 models. Results may vary. If you need h
 If you use a USB wifi adapter don't expect sleep to work properly.
 The original Intel 600p creates issues after sleep, converting drive to HFS+ after installation might fix the issue. Replacement drive is preferred.
 
-If patching SSDT and DSDT, do the regular patches recommended by RehabMan and the ones required by VoodooI2C for a functional and flawless touchpad experience.
+If patching SSDT and DSDT, do the regular patches recommended by RehabMan (such as renaming) and the ones required by VoodooI2C for a functional and flawless touchpad experience. Functional keyboard brightness hotkeys require another patch to the DSDT, for my Swift 3 EC _Q71 (Fn + Left) and EC _Q70 (Fn + Right) were the keys I used to map brightness.
 
 # What Works
 - Audio
